@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>menu</title>
+</head>
+<body>
+    
+       <div class="main">
+        <div class="navbar">
+          <a class="active" href="home.html">Home</a>
+          <a class="active" href="menu.html">Our Menu</a>
+          <a class="active" href="QhwateeClub.html">Qhwatee Club</a>
+          <a class="active" href="orderonline.html">Order Online</a>    
+          <a class="up" style="color: azure;" href="SignUp.html">Sign Up</a>
+          <a class="up" style="color: azure;" href="login.html">login</a>
+      </div>
+      <hr>
+  <div class="cart">
+       <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span> items | Total: $<span id="cart-total">0</span>
+  </div>
+
+  <section class="container" id="product-list"></section>
+
+  <script>
+    const products = [
+      { name: "Americano", price: 60,image: "style/Menu/Americano.jpeg" },
+      { name: "Cappucino", price: 40, image: "style/Menu/Cappucino.jpeg" },
+      { name: "Turkish coffee", price: 30,  image: "style/Menu/Turkish coffee.jpeg" },
+      { name: "Cortado", price: 60,image: "style/Menu/Cortado.jpeg" },
+      { name: "Chai_Latte", price: 70, image: "style/Menu/Chai_Latte.jpeg" },
+      { name: "Ice coffee", price: 80, image: "style/Menu/Ice coffee.jpeg" },
+      { name: "Coffee_Frappe", price: 80, image: "style/Menu/Coffee_Frappe.jpeg" },
+      { name: "Mocha", price: 90, image: "style/Menu/Mocha.jpeg" },
+      { name: "Latte", price: 70,  image: "style/Menu/Latte.jpeg" },
+      { name: "Nescafe", price: 60, image: "style/Menu/Nescafe.jpeg" },
+    ];
+
+    let cartCount = 0;
+    let cartTotal = 0;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryFilter = urlParams.get('cat');
+    const productList = document.getElementById('product-list');
+
+    const filteredProducts = categoryFilter
+      ? products.filter(p => p.category === categoryFilter)
+      : products;
+
+    filteredProducts.forEach(product => {
+      const div = document.createElement('div');
+      div.classList.add('product');
+      div.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" />
+        <h3>${product.name}</h3>
+        <p>$${product.price}</p>
+        <button onclick="addToCart(${product.price})">
+          <i class="fas fa-cart-plus"></i> Add to Cart
+        </button>
+      `;
+      productList.appendChild(div);
+    });
+
+    function addToCart(price) {
+      cartCount++;
+      cartTotal += price;
+      document.getElementById("cart-count").innerText = cartCount;
+      document.getElementById("cart-total").innerText = cartTotal.toFixed(2);
+    }
+  </script>
+</body>
+</html>

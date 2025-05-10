@@ -1,0 +1,107 @@
+.imgya img{
+    width: 80%;
+
+    display: block;
+    margin: 20px auto;
+}
+.tts{
+    background-color: #58162F;
+    color: azure;
+    text-align: center;
+    border-radius: 0px 200px;
+    width: 70%;
+    margin: auto;
+    padding: 50px
+}
+.tts a{
+  display: inline-block;
+  background: none;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 25px;
+  padding: 16px;
+    font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  color: wheat;
+  border-color: #7B4252 ;
+  margin: 1px;
+}
+.tts hr{
+    background-color: azure;
+    width: 2em;
+    display: inline-block;
+    margin: 20px auto;
+}
+body{
+    margin: auto;
+    font-family: 'Poppins';font-size: 22px;
+}
+ 
+.or {
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+  }
+  .or:before, .or:after{
+    content: "";
+    flex: 1 1;
+    color: #7B4252;
+    border-bottom: 3px solid;
+    margin: auto;
+  }
+  .or:before {
+    margin-right: 10px
+  }
+  .or:after {
+    margin-left: 10px
+  }
+  footer{
+    background-color: #58162F;
+  }
+  
+  .g8{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #58162F;
+    color: aliceblue;
+    text-align: center;
+  }
+.g8 img{
+    width: 100%;
+    height: 100%;
+}
+.g8 h2,h5{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.g9{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #F19799;
+    color: #58162F;
+    text-align: center;
+  }
+.g9 img{
+    width: 100%;
+    height: 100%;
+}
+.g9 h2,h5{  
+    display: inline-block;
+    padding: 10px 20px;
+}
+.imgq{
+    width: 70%;
+    margin:20px auto;
+    color: azure;
+    font-size: 64px;
+    text-align: center  ;
+    background-image: url('posters/costa-club-boosterthefreeone-redwave-1600x464.jpg');
+    background-attachment: fixed;
+    padding: 200px;
+  
+    background-size: cover;
+}

@@ -1,0 +1,75 @@
+body{
+    font-family: 'Poppins';font-size: 22px;
+    text-align: center;
+}
+.order-now{
+    padding: 20px;
+    color: #f5ece6;
+    text-align: center;
+    background-color: #400416;
+        width: 90%;
+    margin: auto;
+}
+.order-now h2{
+    display: block;
+    text-align: center;
+
+}
+.cont{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.faas{
+    text-align: center;
+    width: 30%;
+}
+.faas img{
+    display: block;
+    width: 100%;
+}
+.faas a{
+
+    text-decoration: none;
+    color: #f5ece6;
+}
+.thr{
+    width: 3em;
+    background-color: #FF5A00;
+}
+.uhr{
+    width: 4em;
+    background-color: #06C167;
+}
+.ohr{
+    background-color: #FFDE00;
+    width: 2em;
+}
+.appf{
+    display: flex;
+    text-align: center;
+    color: #400416;
+    background-color: #f5ece6;
+}
+.appf a{
+    text-align: center;
+    color: #a10a37;
+    
+    display: inline-block;
+    
+    text-decoration: none;
+}
+.klam{
+    padding: 20px;
+    margin: auto;
+}
+.klam hr{
+    display: block;
+    width: 6em;
+}
+
+.stany{
+    padding-top: 200px;
+    margin: auto;
+    width: 90%;
+}

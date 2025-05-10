@@ -1,0 +1,37 @@
+.navbar {
+    overflow: hidden;
+    margin: auto;
+    height: 120px;  
+    padding-top: 40px;
+    padding-left: 250px;
+    font-family: 'Poppins';font-size: 22px;
+    top: 0%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 16px 30px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    border-radius: 50PX;
+    background-color: #d2cfcf;
+    color: #006240;
+  }
+  
+  .up  {
+    background-color: #006240;
+    border-radius: 50PX;
+    margin: 5PX;
+  }
+  
+  hr{
+    height: 5px;
+    background-color: #006240;
+    border: none;
+  }
+  /* nav-end */
